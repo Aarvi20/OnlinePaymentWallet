@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Online wallet</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wallet-container "   >
+<form class="form-horizontal" [formGroup]="addWithdrawForm"  (ngSubmit)="onSubmit()" >
+  <p class="page-title"><i class="fa fa-align-left">  &nbsp;Online wallet</i> </p>
+  <div class="amount-box text-center">
+    <img src="https://lh3.googleusercontent.com/ohLHGNvMvQjOcmRpL4rjS3YQlcpO0D_80jJpJ-QA7-fQln9p3n7BAnqu3mxQ6kI4Sw" alt="wallet">
+
+  </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title"></h3>
+      </div>
+      <div class="panel-body">
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="aid">Enter Account_ID</label>
+          <div class="col-sm-8">
+            <input id="aid" type="text" class="form-control" formControlName="aid">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="amount">Enter Amount</label>
+          <div class="col-sm-8">
+            <input id="amount" type="number" class="form-control" formControlName="amount">
+          </div>
+        </div>
+                 
+      </div>
+      <div class="panel-footer"  >
+        &nbsp;&nbsp;
+            <button class="btn btn-primary btn-block " type="submit" >Add Money</button>
+      
+      </div>
+    </div>
+             
+  </form>
+  </div>
+</body>
+</html>
